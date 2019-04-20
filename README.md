@@ -13,6 +13,7 @@ who # 查看现在有谁登录系统。
 who | wc -l # |（管道）符号可以在两个程序之间建立管道（pipeline）：who 的输出，成了 wc 的输入。wc（字数计算）程序，可以计算行数（line），字数（word）与字符数（character）。
 cat > filename # 创建文件。
 who; pwd # 分号（;）可用来分隔同一行里的多条命令。Shell 会依次执行这些命令。
+tr -d '\r' < doc.txt | sort > new-doc.txt # 先删除文件内的回车字符，在完成数据的排序之后，将结果输出到目的文件。
 ```
 
 
