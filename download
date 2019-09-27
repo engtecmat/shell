@@ -1,0 +1,5 @@
+#! /bin/sh
+echo "start download"
+rm -f README.md
+wget https://github.com/dev-feng-zhang/dev.feng.zhang/blob/master/README.md
+echo "finished download"
