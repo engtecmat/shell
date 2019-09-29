@@ -1,5 +1,6 @@
 #! /bin/sh
-echo "start download"
-rm -f README.md
-wget https://github.com/dev-feng-zhang/dev.feng.zhang/blob/master/README.md
+filename="$1"
+echo "start download $filename"
+rm -f "$filename"
+wget "https://github.com/dev-feng-zhang/library/blob/master/""$filename"
 echo "finished download"
