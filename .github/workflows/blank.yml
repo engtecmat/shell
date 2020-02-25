@@ -6,4 +6,4 @@ jobs:
     - name: wget
       uses: wei/wget@v1
       with:
-        args: -O https://github.com/
+        args: https://github.com/
