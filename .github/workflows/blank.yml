@@ -1,17 +1,9 @@
-name: CI
-
-on: [push]
-
+on: push
 jobs:
-  build:
-
+  wget:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        wget http://www.github.com,
-        echo test, and deploy your project.
+    - name: wget
+      uses: wei/wget@v1
+      with:
+        args: -O https://github.com/
