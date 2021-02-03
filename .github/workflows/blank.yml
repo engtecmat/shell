@@ -1,9 +1,0 @@
-on: push
-jobs:
-  wget:
-    runs-on: ubuntu-latest
-    steps:
-    - name: wget
-      uses: wei/wget@v1
-      with:
-        args: https://github.com/
